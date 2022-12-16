@@ -1,7 +1,12 @@
 {
   "name": "my-developer-portfolio",
   "packageManager": "yarn@3.3.0",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
   "dependencies": {
-    "@emailjs/browser": "^3.10.0"
+    "@emailjs/browser": "^3.10.0",
+    "parcel": "^2.8.2"
   }
 }

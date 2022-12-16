@@ -3,3 +3,6 @@ assets/fonts/
 .yarn
 .pnp.*
 .pnp
+
+dist
+.parcel-cache
