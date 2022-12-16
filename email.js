@@ -8,7 +8,6 @@ const Message = document.getElementById("message");
 
 Form.addEventListener("submit", (event) => {
   event.preventDefault();
-  console.log("submit form");
   const name = Name.value;
   const email = Email.value;
   const message = Message.value;
@@ -20,6 +19,8 @@ Form.addEventListener("submit", (event) => {
     from_name: "Portfolio site",
   };
 
+  resetForm(Name, Email, Message);
+
   emailjs.send(
     process.env.EMAIL_SERVICE_ID,
     process.env.EMAIL_TEMPLATE_ID,
@@ -27,3 +28,9 @@ Form.addEventListener("submit", (event) => {
     process.env.EMAIL_PUBLIC_ID
   );
 });
+
+function resetForm(...elements) {
+  elements.forEach((element) => {
+    element.value = "";
+  });
+}
