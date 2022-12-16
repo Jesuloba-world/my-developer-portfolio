@@ -315,7 +315,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/core@npm:2.8.2":
+"@parcel/core@npm:2.8.2, @parcel/core@npm:^2.8.2":
   version: 2.8.2
   resolution: "@parcel/core@npm:2.8.2"
   dependencies:
@@ -2120,6 +2120,7 @@ __metadata:
   resolution: "my-developer-portfolio@workspace:."
   dependencies:
     "@emailjs/browser": ^3.10.0
+    "@parcel/core": ^2.8.2
     parcel: ^2.8.2
   languageName: unknown
   linkType: soft
