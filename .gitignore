@@ -6,3 +6,4 @@ assets/fonts/
 
 dist
 .parcel-cache
+.env

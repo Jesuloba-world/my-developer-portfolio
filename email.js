@@ -12,4 +12,18 @@ Form.addEventListener("submit", (event) => {
   const name = Name.value;
   const email = Email.value;
   const message = Message.value;
+
+  const data = {
+    name,
+    email,
+    message,
+    from_name: "Portfolio site",
+  };
+
+  emailjs.send(
+    process.env.EMAIL_SERVICE_ID,
+    process.env.EMAIL_TEMPLATE_ID,
+    data,
+    process.env.EMAIL_PUBLIC_ID
+  );
 });
