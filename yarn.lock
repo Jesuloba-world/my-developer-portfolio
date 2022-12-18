@@ -573,6 +573,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@parcel/packager-raw-url@npm:2.8.2":
+  version: 2.8.2
+  resolution: "@parcel/packager-raw-url@npm:2.8.2"
+  dependencies:
+    "@parcel/plugin": 2.8.2
+    "@parcel/utils": 2.8.2
+  checksum: de45a9a5e3d909000379f0d2846b90020401c7d07a7104ace41bde098314d340bc4980a07d858b09d81e22174efb2e4c1fd3764ee96ccb81112d64893109258b
+  languageName: node
+  linkType: hard
+
 "@parcel/packager-raw@npm:2.8.2":
   version: 2.8.2
   resolution: "@parcel/packager-raw@npm:2.8.2"
@@ -845,6 +855,18 @@ __metadata:
     posthtml-render: ^3.0.0
     semver: ^5.7.1
   checksum: e4522b69e3ee8a75ea154d93b7a42abf440ccd674d82cc38be0534ca1aafb2a97ae81212ffbb7421456ed164c213866041e360124433f8afe704203e33f31a5e
+  languageName: node
+  linkType: hard
+
+"@parcel/transformer-webmanifest@npm:2.8.2":
+  version: 2.8.2
+  resolution: "@parcel/transformer-webmanifest@npm:2.8.2"
+  dependencies:
+    "@mischnic/json-sourcemap": ^0.1.0
+    "@parcel/diagnostic": 2.8.2
+    "@parcel/plugin": 2.8.2
+    "@parcel/utils": 2.8.2
+  checksum: 95f7470a1eed45995c36de2d79a25031116a4080998df32dac41c4bf938354298e909bd9e90d20008ca27a5f8870ea7de7a37d5aeaae94757463ac5e36c83368
   languageName: node
   linkType: hard
 
@@ -2121,6 +2143,8 @@ __metadata:
   dependencies:
     "@emailjs/browser": ^3.10.0
     "@parcel/core": ^2.8.2
+    "@parcel/packager-raw-url": 2.8.2
+    "@parcel/transformer-webmanifest": 2.8.2
     parcel: ^2.8.2
   languageName: unknown
   linkType: soft
